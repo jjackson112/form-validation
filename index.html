@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Form Validation</title>
-    <link rel="stylesheet" style="style.css">
+    <link href=style.css rel="stylesheet">
     <script src="app.js" defer></script>
 </head>
 <body>
+    <div class="wrapper">
     <div id="error"></div>
     <form action="/" method="GET">
-        <div>
+        <div class="enter-name">
             <label for="name">Name</label>
-            <input id="name" name="name" type="text" required>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
         </div>
-        <div>
+        <div class="enter-password">
             <label for="name">Password</label>
-            <input id="password" name="password" type="password">
+            <input id="email" name="email" type="email" placeholder="@#$57">
+        </div>
+        <div class="enter-email">
+            <label for="name">Email</label>
+            <input id="password" name="password" type="password" placeholder="name@example.com">
         </div>
         <button type="submit">Submit</button>
     </form>
+    </div>
 </body>
 </html>
